@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SUPER CAR PAI.">
+    <title>SUPER CAR PAI</title>
+   
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Toko animal",
+        "image": "https://example.com/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jalan Cemilan No. 10",
+            "addressLocality": "Surabaya",
+            "addressRegion": "Jawa Timur",
+            "postalCode": "60256",
+            "addressCountry": "ID"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-7.257472",
+            "longitude": "112.752090"
+        },
+        "openingHours": "Mo-Su 08:00-20:00",
+        "telephone": "+62-31-98765432",
+        "priceRange": "Rp",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "250"
+        }
+    }
+    </script>
+    <style>
+        body {
+            background: url('https://radarseluma.disway.id/upload/8f193516c460559f311582f4c5ae2357.png') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: rgba(171, 60, 101, 0.639);
+            color: rgb(213, 212, 236);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+        .container {
+            padding: 20px;
+            color: lemonchiffon;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            border: 1px solid #ebe1e199;
+            border-radius: 5px;
+            background: rgba(146, 42, 80, 0.639);
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 0 auto;
+            display: block;
+        }
+        .product-item h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .product-item .price {
+            color: rgb(240, 245, 240);
+            font-weight: bold;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .rating span {
+            color: gold;
+            font-size: 18px;
+            margin: 0 1px;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        .buy-now {
+            background-color: grey;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .buy-now:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>SHOWROOM SUPER CAR PAI</h1>
+        <p>TERJAMIN DAN TERPERCAYA!</p>
+    </header>
+
+    <div class="container">
+        <h2>Silahkan dipilih</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4NMYSgiVh5OENLj7-q239wHaEK&pid=Api&P=0&h=220" alt="mobil mewah">
+                <h3>FERRARI</h3>
+                <p class="price">Rp 15,98 milyar</p>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('FERRARI', 15980000000)">beli sekarang</button>
+            </div>
+            <div class="product-item">
+                <img src="lamborghini ultimee.jpg" alt="mobil mewah">
+                <h3>LAMBORGHINI ULTIME</h3>
+                <p class="price">Rp 1,95 milyar</p>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9734;</span>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('LAMBORGHINI ULTIME', 1950000000 )">beli sekarang</button>
+            </div>
+            <div class="product-item">
+                <img src="toyota alphard.png" alt="mobil mewah">
+                <h3>TOYOTA ALPHARD</h3>
+                <p class="price">Rp 1 milyar</p>
+                <div class="rating">
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                    <span>&#9733;</span>
+                </div>
+                <button class="add-to-cart" onclick="addToCart('TOYOTA ALPHARD', 1000000000)">beli sekarang</button>
+            </div>
+        <div class="product-item">
+            <img src="buggati.png" alt="mobil mewah">
+            <h3>BUGGATI</h3>
+            <p class="price">Rp 23.99 milyar</p>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('BUGGATI', 23990000000)">beli sekarang</button>
+        </div>
+        <div class="product-item">
+            <img src="rolls-royce.png" alt="mobil mewah">
+            <h3>ROLLS-ROYCE</h3>
+            <p class="price">Rp 9 milyar</p>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ROLLS-ROYCE', 9000000000)">beli sekarang</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Keranjang Anda</h2>
+        <ul id="cart"></ul>
+        <p id="total" style="font-weight: bold;">Total:</p>
+    </div>
+
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            total += price;
+
+            // Update keranjang di halaman
+            const cartList = document.getElementById('cart');
+            const totalElement = document.getElementById('total');
+            cartList.innerHTML = '';
+            cart.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - Rp ${item.price.toLocaleString()}`;
+                cartList.appendChild(listItem);
+            });
+            totalElement.textContent = `Total: Rp ${total.toLocaleString()}`;
+        }
+
+        function buyNow(productName, price) {
+            alert(`Anda telah membeli ${productName} seharga Rp ${price.toLocaleString()}. Terima kasih atas pembeliannya!`);
+        }
+    </script>
+</body>
+</html>
